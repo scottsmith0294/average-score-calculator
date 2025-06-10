@@ -66,11 +66,23 @@
     }
     math
     const average = (math + english + science) / 3;
-    const studentName = document.getElementById("studentName").value || "Student";
-    document.getElementById("result").innerText =`${studentName}'s average score is: ${average.toFixed(2)}`;
+    if (average < 0 || average > 100) {
+        setTimeout(() => {
+            document.getElementById("result").innerText = "pass";
+        }, 3000);
+        document.getElementById("result").innerText = "Scores must be between 0 and 100";
+        return ;
+    }
+    // const studentName = document.getElementById("studentName").value || "Student";
+    // document.getElementById("result").innerText =`${studentName}'s average score is: ${average.toFixed(2)}`;
+    // console.log(document.getElementById("result").innerText =`${studentName}'s average score is: ${average.toFixed(2)}`);
+    
     // Resetting the input fields to empty strings  
     document.getElementById("math").value = "";
     document.getElementById("english").value = "";
     document.getElementById("science").value = "";
     document.getElementById("studentName").value = "";
   }
+
+
+  // const 
