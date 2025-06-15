@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+
+    <div id="result"></div>
+    <h1>calculate student Average score</h1>
+    <div class="studentAverage">
+        <input type="text" id="studentName" placeholder="Student Name" name="name" required>
+        <input type="text" id="science" placeholder="Science" name="score1" required>
+        <input type="text" id="maths" placeholder="Maths" name="score2" required>
+        <input type="text" id="english" placeholder="English" name="score3" required>
+        <input type="text" id="biology" placeholder="Biology" name="score3" required>
+        <button onclick = "calculateAverage()">Calculate Average</button>
+    </div>
+        <!-- <button onclick = "checkGrade()">Check Grade</button> -->
+    <script src="home.js"></script>
+
 </body>
 </html>
