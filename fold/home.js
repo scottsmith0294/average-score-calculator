@@ -5,7 +5,7 @@ document.getElementById('studentName').addEventListener('input', function() {
     const maxLength = 10;
     if (this.value.length > maxLength) {
         this.value = this.value.slice(0, maxLength);
-        inputText.textContent = "Name cannot exceed 20 characters.";
+        inputText.textContent = "Name cannot exceed 10 characters.";
     }
 });
 const calculateAverage = ()=>{
