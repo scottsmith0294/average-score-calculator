@@ -8,6 +8,13 @@ document.getElementById('studentName').addEventListener('input', function() {
         inputText.textContent = "Name cannot exceed 10 characters.";
     }
 });
+document.getElementById('studentName').addEventListener('keydown',function(e){
+    if((e.keyCode >=45 && e.keyCode <= 60 ) || (e.keyCode >= 90 && e.keyCode <= 150)){
+        e.preventDefault()
+        alert('please input text not number')
+    }
+})
+
 const calculateAverage = ()=>{
     
     // Get the student name and scores from the input fields
